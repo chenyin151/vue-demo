@@ -4,7 +4,7 @@
  * @Author: cy
  * @Date: 2021-01-14 16:15:48
  * @LastEditors: cy
- * @LastEditTime: 2021-02-04 14:07:02
+ * @LastEditTime: 2021-02-05 17:31:57
 -->
 <template>
   <div id="app">
@@ -19,7 +19,9 @@
     <!-- <slot-test></slot-test> -->
     <!-- <base-layout></base-layout> -->
     <!-- <scoped-slot></scoped-slot> -->
-    <todo-test></todo-test>
+    <!-- <jsx-slot-test></jsx-slot-test> -->
+    <func-comp></func-comp>
+    <!-- <todo-test></todo-test> -->
   </div>
 </template>
 
@@ -29,12 +31,13 @@ import './components/jsx'
 import Transition from './components/transition';
 import StyleBind from './components/transition/StyleBind';
 import CompTransition from './components/transition/CompTransition'
-// import SlotTest from './components/jsx/slot/index.vue';
+import JsxSlotTest from './components/jsx/slot/index.vue';
 import SlotTest from './components/插槽/插槽内容/index.vue'
 import BaseLayout from './components/插槽/插槽内容/BaseLayoutTest.vue';
 import ScopedSlot from './components/插槽/作用域插槽/index.vue';
 import TodoTest from './components/插槽/作用域插槽/TodoTest.vue'
-
+import FuncComp from './components/jsx/函数式组件/index.vue';
+import FuncComp1 from './components/jsx/函数式组件/funcComp1'
 export default {
   name: 'App',
   components: {
@@ -45,7 +48,9 @@ export default {
     SlotTest,
     BaseLayout,
     ScopedSlot,
-    TodoTest
+    TodoTest,
+    JsxSlotTest,
+    FuncComp
   },
   methods: {
     reload() {

@@ -4,7 +4,7 @@
  * @Author: cy
  * @Date: 2021-02-03 15:34:43
  * @LastEditors: cy
- * @LastEditTime: 2021-02-04 10:29:32
+ * @LastEditTime: 2021-02-05 09:35:23
 -->
 <script>
     export default {
@@ -12,7 +12,9 @@
        render: function(createElement) {
            console.log('slot.render')
            return createElement('div', [this.$scopedSlots.default({
-            //    text: this.message
+               text: 'ddd'
+           }), this.$scopedSlots.name1({
+               text: '111'
            })])
        }
     }

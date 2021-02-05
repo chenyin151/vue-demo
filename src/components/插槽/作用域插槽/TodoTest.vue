@@ -4,12 +4,12 @@
  * @Author: cy
  * @Date: 2021-02-04 14:05:43
  * @LastEditors: cy
- * @LastEditTime: 2021-02-04 14:16:20
+ * @LastEditTime: 2021-02-04 14:45:38
 -->
 <template>
     <div>
         <todo-list :list="items">
-            <template #todo="{ item }">
+            <template slot-scope:todo="{ item }">
                 <span v-if="item.saled">卖出去的价格：{{item.cost}}</span>
             </template>
         </todo-list>
