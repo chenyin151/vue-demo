@@ -4,7 +4,7 @@
  * @Author: cy
  * @Date: 2021-01-14 16:15:48
  * @LastEditors: cy
- * @LastEditTime: 2021-08-12 09:11:24
+ * @LastEditTime: 2021-08-12 15:35:02
  * @LastEditors: Please set LastEditors
  * @LastEditTime: 2021-03-02 22:47:56
 -->
@@ -23,11 +23,12 @@
     <!-- <scoped-slot></scoped-slot> -->
     <!-- <jsx-slot-test></jsx-slot-test> -->
     <!-- <func-comp></func-comp> -->
-    <todo-test></todo-test>
-    <!-- <echart-flex></echart-flex> -->
-    <!-- <attrs></attrs> -->
-    <svg-demo></svg-demo>
     <!-- <todo-test></todo-test> -->
+    <!-- <echart-flex></echart-flex> -->
+    <attrs></attrs>
+    <!-- <svg-demo></svg-demo> -->
+    <!-- <todo-test></todo-test> -->
+    <provide-inject></provide-inject>
   </div>
 </template>
 
@@ -43,11 +44,11 @@ import BaseLayout from './components/插槽/插槽内容/BaseLayoutTest.vue';
 import ScopedSlot from './components/插槽/作用域插槽/index.vue';
 import TodoTest from './components/插槽/作用域插槽/TodoTest.vue'
 import FuncComp from './components/jsx/函数式组件/index.vue';
-import FuncComp1 from './components/jsx/函数式组件/funcComp1';
 import EchartFlex from './components/Echart在flex下的测试/index.vue';
 import Attrs from './components/$attr使用/index.vue';
 import SvgDemo from './components/svg/index.vue'
-import FuncComp1 from './components/jsx/函数式组件/funcComp1'
+import FuncComp1 from './components/jsx/函数式组件/funcComp1';
+import ProvideInject from './components/provider_inject/parent.vue'
 export default {
   name: 'App',
   components: {
@@ -62,8 +63,9 @@ export default {
     JsxSlotTest,
     FuncComp,
     EchartFlex,
-    Attrs
-    SvgDemo
+    Attrs,
+    SvgDemo,
+    ProvideInject
   },
   methods: {
     reload() {
