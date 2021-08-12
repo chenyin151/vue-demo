@@ -4,7 +4,9 @@
  * @Author: cy
  * @Date: 2021-01-14 16:15:48
  * @LastEditors: cy
- * @LastEditTime: 2021-06-01 10:18:26
+ * @LastEditTime: 2021-08-12 09:11:24
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-03-02 22:47:56
 -->
 <template>
   <div id="app">
@@ -24,6 +26,8 @@
     <todo-test></todo-test>
     <!-- <echart-flex></echart-flex> -->
     <!-- <attrs></attrs> -->
+    <svg-demo></svg-demo>
+    <!-- <todo-test></todo-test> -->
   </div>
 </template>
 
@@ -42,6 +46,8 @@ import FuncComp from './components/jsx/函数式组件/index.vue';
 import FuncComp1 from './components/jsx/函数式组件/funcComp1';
 import EchartFlex from './components/Echart在flex下的测试/index.vue';
 import Attrs from './components/$attr使用/index.vue';
+import SvgDemo from './components/svg/index.vue'
+import FuncComp1 from './components/jsx/函数式组件/funcComp1'
 export default {
   name: 'App',
   components: {
@@ -57,6 +63,7 @@ export default {
     FuncComp,
     EchartFlex,
     Attrs
+    SvgDemo
   },
   methods: {
     reload() {
