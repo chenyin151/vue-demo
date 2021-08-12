@@ -2,31 +2,32 @@
  * @Description: 
  * @version: 
  * @Author: cy
- * @Date: 2021-02-04 14:05:26
+ * @Date: 2021-05-21 09:59:16
  * @LastEditors: cy
- * @LastEditTime: 2021-06-01 10:41:05
+ * @LastEditTime: 2021-05-21 10:20:54
 -->
 <template>
     <div>
-        <li v-for="item in list" :key="item.id">
-            <slot name="todo" :item="item">
-                {{item}}
-            </slot>
-        </li>
+        孙子组件接收到参数: {{row}}
     </div>
 </template>
 
 <script>
     export default {
+        inheritAttrs: false,
         props: {
             list: {
                 type: Array,
                 default: () => []
             },
+            row: {
+                type: Number,
+                default: 0
+            }
         },
     }
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 
 </style>

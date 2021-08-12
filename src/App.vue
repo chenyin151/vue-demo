@@ -4,7 +4,7 @@
  * @Author: cy
  * @Date: 2021-01-14 16:15:48
  * @LastEditors: cy
- * @LastEditTime: 2021-02-05 17:31:57
+ * @LastEditTime: 2021-06-01 10:18:26
 -->
 <template>
   <div id="app">
@@ -20,8 +20,10 @@
     <!-- <base-layout></base-layout> -->
     <!-- <scoped-slot></scoped-slot> -->
     <!-- <jsx-slot-test></jsx-slot-test> -->
-    <func-comp></func-comp>
-    <!-- <todo-test></todo-test> -->
+    <!-- <func-comp></func-comp> -->
+    <todo-test></todo-test>
+    <!-- <echart-flex></echart-flex> -->
+    <!-- <attrs></attrs> -->
   </div>
 </template>
 
@@ -37,7 +39,9 @@ import BaseLayout from './components/插槽/插槽内容/BaseLayoutTest.vue';
 import ScopedSlot from './components/插槽/作用域插槽/index.vue';
 import TodoTest from './components/插槽/作用域插槽/TodoTest.vue'
 import FuncComp from './components/jsx/函数式组件/index.vue';
-import FuncComp1 from './components/jsx/函数式组件/funcComp1'
+import FuncComp1 from './components/jsx/函数式组件/funcComp1';
+import EchartFlex from './components/Echart在flex下的测试/index.vue';
+import Attrs from './components/$attr使用/index.vue';
 export default {
   name: 'App',
   components: {
@@ -50,7 +54,9 @@ export default {
     ScopedSlot,
     TodoTest,
     JsxSlotTest,
-    FuncComp
+    FuncComp,
+    EchartFlex,
+    Attrs
   },
   methods: {
     reload() {
